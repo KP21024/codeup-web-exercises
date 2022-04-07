@@ -10,3 +10,4 @@ var daysRentedBrotherBear = parseFloat(prompt(  'How many days was Brother Bear 
 var daysRentedHurcules = parseFloat(prompt( 'How many days was Hurcules rented?'))
 var totalcost = ((daysRentedLittleMermaid + daysRentedBrotherBear + daysRentedHurcules) *3)
 alert('Total days rented charge' + totalcost)
+
