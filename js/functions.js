@@ -35,7 +35,10 @@ var helloMessage = sayHello("Kenny");
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-var myname = ('Kenny');
+function sayhello(){
+    var myName ="Kenny";
+}
+
 
 
 
@@ -61,9 +64,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(num){
-    return num === 2
+    return num === 2;
+
 }
-console.log(isTwo())
+console.log(isTwo(random))
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -75,7 +79,13 @@ console.log(isTwo())
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+//how many inputs?
+//what type of inputs?
+//what type of output
+function calculateTip(){
+    var bill
 
+}
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
