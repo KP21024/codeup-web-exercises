@@ -1,4 +1,5 @@
 "use strict";
+(function(){
 
 /**
  * TODO:
@@ -24,10 +25,8 @@ sayHello(" Kenny")
  * console.log 'helloMessage' to check your work
  */
 var helloMessage = sayHello("Kenny");
-{
 
-}
-    console.log('helloMessage');
+console.log('helloMessage');
 
 /**
  * TODO:
@@ -35,9 +34,8 @@ var helloMessage = sayHello("Kenny");
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-function sayhello(){
-    var myName ="Kenny";
-}
+var myName ="Kenny";
+console.log(sayHello(myName));
 
 
 
@@ -67,7 +65,8 @@ function isTwo(num){
     return num === 2;
 
 }
-console.log(isTwo(random))
+console.log(isTwo(random), 'number should be' random)
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -82,16 +81,26 @@ console.log(isTwo(random))
 //how many inputs?
 //what type of inputs?
 //what type of output
-function calculateTip(){
-    var bill
-
+//tip percentage
+// tip
+//total bill
+function calculateTip(tipPercentage, totalBill){
+    return tipPercentage * totalBill;
 }
+console.log(calculateTip(  0.20,  20))
+console.log(calculateTip(  0.25,  25.5))
+console.log(calculateTip(  0.15,  33.42))
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+var bill = parseFloat(prompt("what was your bill?"));
+var tip = parseFloat(prompt("what percentage would you like to tip?"))
+
+alert(calculateTip(tip, bill))
+
 
 /**
  * TODO:
@@ -107,3 +116,10 @@ function calculateTip(){
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(orginalPrice, discountPercent){
+    return orgPrice - (orginalPrice * discountPercent);
+}
+
+console.log(applyDiscount(100, .2));
+
+}())
