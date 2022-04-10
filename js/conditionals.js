@@ -23,7 +23,11 @@
  */
 
 
-function analyzeColor(colorPicked) {
+function analyzeColor(colorPicked){
+    prompt("pick a color!");{
+
+    }
+
 
     console.log(colorPicked)
     switch (colorPicked) {
