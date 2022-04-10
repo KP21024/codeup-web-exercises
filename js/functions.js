@@ -65,7 +65,7 @@ function isTwo(num){
     return num === 2;
 
 }
-console.log(isTwo(random), 'number should be' random)
+console.log(isTwo(random), 'number should be' + random);
 
 /**
  * TODO:

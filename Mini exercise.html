@@ -29,12 +29,39 @@ function isFive(input) {
 // what is the return type? boolean
 
 function isShortWord (stringInput) {
-    return stringInput.length < 5;
+    return stringInput.length < 5;{
+
+    }
 }
+console.log(isShortWord('hello'), false);
+console.log(isShortWord('dog'), true);
+console.log(isShortWord('bike'), true);
 // Write a function, isSameLength, that takes in two string inputs and returns the boolean value true if the passed arguments are the same length. Return false otherwise.
+function isSameLength(string1, string2) {
+    if (string1.length == string2.length) ;
+    {
+        return true;
+    }
+ if  (string1 <= string2) ; {
 
+        return false;
+    }
+
+    }
+
+
+console.log(isSameLength('frog', 'frog'));
+console.log(isSameLength('dog', 'cat'));
+console.log(isSameLength('shoe', 'sneaker'));
 // Write a function, getSmallerSegment, that takes in a string and a number input. The function should return a substring of the first argument that is as many characters long as the second argument in lowercase.
+function getSmallerSegment(str, segmentLength) {
+    return str.substring(0, segmentLength).toLowerCase();
 
+}
+
+console.log(getSmallerSegment("Kenny", 3));
+console.log(getSmallerSegment("world", 2));
+console.log(getSmallerSegment("weight", 5 ));
 // example input: getSmallerSegment("Codeup", 3)
 // example output: "cod"
     </script>

@@ -24,9 +24,10 @@
 
 
 function analyzeColor(colorPicked) {
+
     console.log(colorPicked)
     switch (colorPicked) {
-        case red:
+        case 'red':
             console.log('Cardinals are red');
             break;
         case 'green':
