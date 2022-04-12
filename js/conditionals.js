@@ -31,13 +31,14 @@ function analyzeColor(colorPicked){
 
     console.log(colorPicked)
     switch (colorPicked) {
-        case 'red':
+        case "red" :
             console.log('Cardinals are red');
+
             break;
-        case 'green':
+        case "green" :
             console.log('Gecko\'s are green');
             break;
-        case 'blue':
+        case "blue" :
             console.log('Blue is the color of the sky');
             break;
         default:
@@ -73,7 +74,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var userInput = prompt (  "Choose a color: ");
+    alert(analyzeColor(userInput));
 /* ########################################################################## */
 
 /**
