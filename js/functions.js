@@ -26,7 +26,7 @@ sayHello(" Kenny")
  */
 var helloMessage = sayHello("Kenny");
 
-console.log('helloMessage');
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -61,8 +61,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-function isTwo(num){
-    return num === 2;
+function isTwo(random){
+    return random === 2;
 
 }
 console.log(isTwo(random), 'number should be' + random);
@@ -117,7 +117,7 @@ alert(calculateTip(tip, bill))
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(orginalPrice, discountPercent){
-    return orgPrice - (orginalPrice * discountPercent);
+    return orginalPrice - (orginalPrice * discountPercent);
 }
 
 console.log(applyDiscount(100, .2));
