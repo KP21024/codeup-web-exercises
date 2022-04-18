@@ -11,6 +11,14 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+  //    var person = {
+    //  firstName: 'Kenny',
+ //     lastName: 'Pittman',
+
+
+ //   }
+ //    console.log(person.firstName);
+ //    console.log(person.lastName);
 
     /**
      * TODO:
@@ -21,6 +29,15 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+    var person = {
+        firstName: 'Kenny',
+        lastName: 'Pittman',
+    }
+        person.sayHello =(function() {
+    })
+        console.log('hello from ' + person.firstName + ' ' + person.lastName);
+
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -35,12 +52,20 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
+//    var discount = 12 / 100
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//   shoppers.forEach(function (shopper){
+//        if (shopper.amount > 200){
+//            console.log(shopper.name + " now has to pay " + (shopper.amount - (shopper.amount * discount)))
+//        } else {
+//           console.log(shopper.name + "Didnt qualify for discount");
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+//        }
+//    })
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +79,13 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    var books = {
+
+    }
+
+
+
+
 
     /**
      * TODO:
