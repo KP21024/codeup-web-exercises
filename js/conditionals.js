@@ -97,7 +97,29 @@ var userInput = prompt (  "Choose a color: ");
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(luckyNum, totalCost){
+    var findPercentage = totalCost / 100
+    if(luckyNum == 0){
+        console.log('Your new total is: ' + (findPercentage * 100) + ' dollars')
+    } else if(luckyNum == 1) {
+        console.log('Your new total is: ' + (findPercentage * 90) + ' dollars')
+    } else if(luckyNum == 2) {
+        console.log('Your new total is: ' + (findPercentage * 75) + ' dollars')
+    } else if(luckyNum == 3) {
+        console.log('Your new total is: ' + (findPercentage * 65) + ' dollars')
+    } else if(luckyNum == 4) {
+        console.log('Your new total is: ' + (findPercentage * 50) + ' dollars')
+    } else if(luckyNum == 5) {
+        console.log('Your items are free.')
+    } else {}
 
+}
+    calculateTotal(0, 100) // returns 100
+    calculateTotal(4, 100) // returns 50
+    calculateTotal(5, 100) // returns 0
+    calculateTotal(1, 100) // returns 90
+    calculateTotal(2, 100) // returns 75
+    calculateTotal(3, 100) // returns 65
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -108,6 +130,28 @@ var userInput = prompt (  "Choose a color: ");
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+    var luckyNumber = Math.floor(Math.random() * 6);
+
+    function calculateTotal(luckyNum, totalCost){
+        var findPercentage = totalCost / 100
+        if(luckyNum === 0){
+            alert('Your new total is: ' + (findPercentage * 100) + ' dollars')
+        } else if(luckyNum === 1) {
+            alert('Your new total is: ' + (findPercentage * 90) + ' dollars')
+        } else if(luckyNum === 2) {
+            alert('Your new total is: ' + (findPercentage * 75) + ' dollars')
+        } else if(luckyNum === 3) {
+            alert('Your new total is: ' + (findPercentage * 65) + ' dollars')
+        } else if(luckyNum === 4) {
+            alert('Your new total is: ' + (findPercentage * 50) + ' dollars')
+        } else if(luckyNum === 5) {
+            alert('Your items are free.')
+        } else {}
+    }
+    var billTotalDollars = prompt('What was the total of your bill?')
+    alert('your lucky number was: ' + luckyNumber)
+    alert('Your price before discount was: ' + billTotalDollars)
+    calculateTotal(luckyNumber, billTotalDollars)
 
 /**
  * TODO:
@@ -127,6 +171,35 @@ var userInput = prompt (  "Choose a color: ");
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+// Justins Solution
+var wantToEnterNumber = confirm("Do you want to enter a number?");
+    if (wantToEnterNumber){
+        var userNumber = prompt("Enter a number");
+        if (isNaN(userNumber)){
+            alert("That is not a number!");
+        } else {
+            var oddOrEven;
+            if (userNumber%2===0){
+                oddOrEven = userNumber + " is even.";
+            } else {
+                oddOrEven = userNumber + " is odd";
+            }
+
+            alert(oddOrEven);
+
+            var numberPlus100 = userNumber + " plus 100 equals " + (Number(userNumber) + 100) + ".";
+
+            alert(numberPlus100);
+
+            var negativeOrPositive;
+            if (userNumber < 0) {
+                negativeOrPositive = "That is a negative number.";
+            } else {
+                negativeOrPositive = "That is a positive number.";
+            }
+            alert(negativeOrPositive);
+        }
+    }
 
 
 })();
