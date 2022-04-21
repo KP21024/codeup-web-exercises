@@ -33,9 +33,10 @@
         firstName: 'Kenny',
         lastName: 'Pittman',
     }
-        person.sayHello =(function() {
-    })
-        console.log('hello from ' + person.firstName + ' ' + person.lastName);
+        person.sayHello = function() {
+            console.log('Hello from Kenny Pittman!');
+    }
+        // console.log('hello from ' + person.firstName + ' ' + person.lastName);
 
 
 
@@ -79,9 +80,48 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    var books = {
+    var books = [
+        {
+            title: 'The Mamba Mentality: How I Play',
+            author: {
+                firstName: 'Kobe',
+                lastName: 'Bryant'
+            }
+        },
+        {
+            title: 'Gone Til November',
+            author: {
+                firstName: 'Dwayne',
+                lastName: 'Carter'
+            }
+        },
+        {
+            title: 'The Great Gatsby',
+            author: {
+                firstName: 'F.Scott',
+                lastName: 'Fitzgerald'
+            }
+        },
+        {
+            title: 'Moby Dick',
+            author: {
+                firstName: 'Herman',
+                lastName: 'Melville'
+            }
+        },
+        {
+            title: 'War and Peace',
+            author: {
+                firstName: 'Leo',
+                lastName: 'Tolstoy'
+            }
+        }
+    ]
+    console.log(books[0].title); //
+    console.log(books[0].author.firstName) //
+    console.log(books[0].author.lastName) //
 
-    }
+
 
 
 
