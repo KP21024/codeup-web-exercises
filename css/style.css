@@ -2,4 +2,25 @@
     color: purple;
     text-decoration: underline;
 }
-
+h2 {
+    text-align: center;
+}
+h2, h3, h4, h5, h6 {
+    color: red;
+    text-decoration: underline;
+}
+body {
+    /*background-color: red;*/
+    background-image: url("http://placeholder.pics/svg/48 ");
+    font-style: italic;
+}
+ul, ol {
+    color: midnightblue;
+}
+table {
+    color: #0fb784;
+    font-size: 30px;
+}
+a:hover {
+    color:blue;
+}
