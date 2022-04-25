@@ -15,24 +15,25 @@ div {
     margin-bottom: 8px;
     border: 1px solid lightgray;
     border-radius: 8px;
+
 }
 .message-info {
-    color: black;
+    color: darkblue;
     background-color: lightskyblue;
 }
 
 .message-success{
-    color: black;
+    color: darkgreen;
     background-color: palegreen;
 }
 
 .message-warning {
-    color: black;
+    color: darkgoldenrod;
     background-color: lightgoldenrodyellow;
 }
 
 .message-error {
-    color: black;
+    color: darkred;
     background-color: lightpink;
 }
 
