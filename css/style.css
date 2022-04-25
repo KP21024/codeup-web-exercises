@@ -1,26 +1,31 @@
 .fancy-header {
-    color: purple;
+    color: gold;
     text-decoration: underline;
+}
+h1 {
+    font-color: gold;
+    text-align: center;
 }
 h2 {
     text-align: center;
 }
 h2, h3, h4, h5, h6 {
-    color: red;
+    color: gold;
     text-decoration: underline;
 }
 body {
     /*background-color: red;*/
-    background-image: url("http://placeholder.pics/svg/48 ");
+    background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/kobe-bryant-taylan-apukovska.jpg");
     font-style: italic;
+    background-size: cover;
 }
 ul, ol {
-    color: midnightblue;
+    color: gold;
 }
 table {
-    color: #0fb784;
-    font-size: 30px;
+    color: gold;
+    font-size: 25px;
 }
 a:hover {
-    color:aqua;
+    color:black;
 }
