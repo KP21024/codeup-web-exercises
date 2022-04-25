@@ -17,7 +17,7 @@ form { padding: 1em;
 
 fieldset {
        padding: 1em;
-        border: none;
+        border: 0;
         background-color: white;
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
@@ -62,12 +62,12 @@ fieldset {
 }
 
 .form-control {
-    box-sizing: border-box;
     padding-top: 4px;
     padding-bottom: 4px;
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
-
+    margin-top: .5em;
+    margin-bottom: .5em;
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
