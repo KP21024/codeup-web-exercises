@@ -66,6 +66,30 @@
     console.log(alpha('Texas'))
 
 
+    function createNumObject(num1, num2) {
+      if (num1 === num2) {
+          return {
+              lowest: num1,
+              highest: num1
+          }
+      } else if (num1 > num2) {
+          return {
+              lowest: num2,
+              highest: num1
+          }
+      } else {
+          return {
+              lowest: num1,
+              highest: num2
+          }
+      }
+    }
+    console.log(createNumObject(4, 8));
+    console.log(createNumObject(1, 6));
+    console.log(createNumObject(7, 2));
+    console.log(createNumObject(4, 6));
+
+
 
 </script>
 
