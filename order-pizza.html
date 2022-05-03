@@ -39,24 +39,49 @@
     </div><!-- Main page content -->
 
 <h2>Build your own pizza!</h2>
+<div class="container-fluid">
     <<ul class="nav nav-tabs">
     <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">
-            <span class="badge bg-secondary rounded-circle">1</span>Size and Crust
-        </a>
+            <span class="badge bg-secondary rounded-circle">1</span>Size and Crust</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <span class="badge bg-secondary rounded-circle">2</span>Cheese and Sauce
-        </a>
+            <span class="badge bg-secondary rounded-circle">2</span>Cheese and Sauce</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <span class="badge bg-secondary rounded-circle">3</span>Toppings
-
-        </a>
+            <span class="badge bg-secondary rounded-circle">3</span>Toppings</a>
     </li>
 </ul>
+</div>
+<div class="container-fluid">
+    <div class="container-fluid p-3 bg-primary text-white" style="width: 100%"> Chose Size and Crust</div>
+    <div class="card d-flex flex-fill mx-auto" style="width: 90%;">
+        <ul class="list-group border border-1 border-secondary ">
+            <li class="list-group-item bg-secondary ">Hand Tossed</li>
+            <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+            <div class="pt-3"><input class="size-small" type="radio" name="pizza-size" id="small">
+                <label class="size-small" for="small"></label>Small (10")</div>
+            <hr>
+            <div class="pb-3"><input class="size-medium " type="radio" name="pizza-size" id="medium">
+                <label class="size-medium" for="medium"></label>Medium (12")</div>
+        </ul>
+    </div>
+    <br>
+    <div class="card d-flex flex-fill mx-auto" style="width: 90%;">
+        <ul class="list-group border border-1 border-secondary ">
+            <li class="list-group-item bg-secondary">Crispy Thin</li>
+            <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
+            <div class="pt-3"><input class="medium-crust" type="radio" name="crust-type" id="medium-crust">
+                <label class="medium-crust" for="medium-crust"></label>Medium (12")</div>
+            <hr>
+            <div class="pb-3"><input class="large-crust " type="radio" name="crust-type" id="large-crust">
+                <label class="large-crust" for="large-crust"></label>Large (14")</div>
+        </ul>
+    </div>
+    <div class="container-fluid d-flex bg-secondary p-2 "><button type="button" class="btn btn-primary ms-auto"> Next Step></button></div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- Your custom JS goes here -->
 </body>
