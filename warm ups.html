@@ -8,7 +8,57 @@
 </head>
 <body>
 
-<script src = js/warmups.js></script>
+<!--May 5th-->
+<!--Consider an array of product objects:-->
+<script>
+const products = [
+{
+name: 'Hammer',
+priceInCents: 4500,
+isInStock: true
+},
+{
+name: 'Computer',
+priceInCents: 45000,
+isInStock: true
+},
+{
+name: 'Water Bottle',
+priceInCents: 3300,
+isInStock: true
+},
+{
+name: 'Car',
+priceInCents: 990000,
+isInStock: true
+},
+{
+name: 'Cup',
+priceInCents: 230,
+isInStock: false
+},
+{
+name: 'Book',
+priceInCents: 540,
+isInStock: false
+},
+];
+
+function returnMostExpensiveProductObjectInStock(products){
+    var mostExpensive = products.reduce((max, min) => max.price > min.price ? max : min);
+
+}
+console.log(returnMostExpensiveProductObjectInStock());
+<!--Create the following functions that take in an array of product objects and return various values:-->
+<!--returnMostExpensiveProductObjectInStock(products)-->
+<!--returnLeastExpensiveProductObjectInStock(products)-->
+<!--returnAveragePriceOfAllProductsInStock(products)-->
+<!--returnProductObjectsNotInStock(products)-->
+
+
+
+
+</script>
 </body>
 </html>
 
