@@ -90,6 +90,23 @@
     console.log(createNumObject(4, 6));
 
 
+    // 5/9/22**********************************************************
+
+    // Write a function that accepts an array of numbers and returns the average.
+
+    function returnAverage (Array) {
+        var total = 0;
+        // for (var i = 0; i < array.length; i++) {
+        //     total += array[i];
+        // }
+        array.forEach(function(number) {
+            total += number;
+        }
+        return total / array.length;
+    }
+        // Test inputs:
+       console.log(returnAverage([3, 5, 7, 10, 0]));
+
 
 </script>
 
