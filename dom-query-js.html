@@ -38,21 +38,27 @@
         // // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         // mainHeader.innerHTML = "JavaScript is Cool"
         document.getElementById("btn1").addEventListener('click', function() {
-            document.getElementById("main-header").innerHTML = "JavaScript is Cool"
+            document.getElementById("main-header").innerHTML = "Javascript is Cool"
 
         })
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
+        // var subHeader = document.getElementById("sub-header");
+
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue'
+        // subHeader.style.color = 'blue'
+
+        document.getElementById("btn2").addEventListener('click', function(){
+            document.getElementById("sub-header").style.color = "blue";
+        })
+
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagNameNS("li");
 
         // TODO: Set text color on every other list item to grey
         for (var i = 0; i < listItems.length; i++) {
-            if (i % 2 === 0) {
+            if (i % 2 === 1) {
                 listItems[i].style.color = 'grey';
             }
         }
