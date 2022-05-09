@@ -52,7 +52,11 @@
         document.getElementById("btn2").addEventListener('click', function(){
             document.getElementById("sub-header").style.color = "blue";
         })
-
+        // document.getElementById("btn2").addEventListener('click', function(){
+        //     for (var i = 0; i < listItems.length; i++){
+        //         if (i % 2 === 0)
+        //     }
+        // }
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagNameNS("li");
 
@@ -73,7 +77,11 @@
         var subParagraphs = document.getElementsByClassName("sub-paragraph") ;
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!"
+        document.querySelector("btn4").addEventListener("click", fucntion(){
+            subParagraphs[0].innerText = "Mission Acomplished!";
+        })
+
+        // subParagraphs[0].innerHTML = "Mission Accomplished!"
     })();
 </script>
 </body>
