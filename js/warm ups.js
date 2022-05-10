@@ -46,3 +46,21 @@ function indexOfCharacter(input1, input2) {
         input1.indexOf(input2);
     }
 }
+
+// 5/10 warm up
+let classes = [
+    {class: "6th grade history", students: 18},
+    {class: "7th grade history", students: 20},
+    {class: "8th grade history", students: 22}
+];
+var sum = 0;
+function calculateTotalStudents(){
+    for (var i = 0; i < classes.length; i++){
+        sum =+ classes[i];
+    }
+}
+console.log(sum);
+
+// Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
+
+// Bonus: instead of the total students, return the highest number of students in any class

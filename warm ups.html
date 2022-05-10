@@ -7,53 +7,74 @@
     <title>JS Warmups</title>
 </head>
 <body>
-
-<!--May 5th-->
-<!--Consider an array of product objects:-->
 <script>
-const products = [
-{
-name: 'Hammer',
-priceInCents: 4500,
-isInStock: true
-},
-{
-name: 'Computer',
-priceInCents: 45000,
-isInStock: true
-},
-{
-name: 'Water Bottle',
-priceInCents: 3300,
-isInStock: true
-},
-{
-name: 'Car',
-priceInCents: 990000,
-isInStock: true
-},
-{
-name: 'Cup',
-priceInCents: 230,
-isInStock: false
-},
-{
-name: 'Book',
-priceInCents: 540,
-isInStock: false
-},
-];
 
-function returnMostExpensiveProductObjectInStock(products){
-    var mostExpensive = products.reduce((max, min) => max.price > min.price ? max : min);
+//<!--&lt;!&ndash;May 5th&ndash;&gt;-->
+<!--&lt;!&ndash;Consider an array of product objects:&ndash;&gt;-->
+<!--<script>-->
+<!--const products = [-->
+<!--{-->
+<!--name: 'Hammer',-->
+<!--priceInCents: 4500,-->
+<!--isInStock: true-->
+<!--},-->
+<!--{-->
+<!--name: 'Computer',-->
+<!--priceInCents: 45000,-->
+<!--isInStock: true-->
+<!--},-->
+<!--{-->
+<!--name: 'Water Bottle',-->
+<!--priceInCents: 3300,-->
+<!--isInStock: true-->
+<!--},-->
+<!--{-->
+<!--name: 'Car',-->
+<!--priceInCents: 990000,-->
+<!--isInStock: true-->
+<!--},-->
+<!--{-->
+<!--name: 'Cup',-->
+<!--priceInCents: 230,-->
+<!--isInStock: false-->
+<!--},-->
+<!--{-->
+<!--name: 'Book',-->
+<!--priceInCents: 540,-->
+<!--isInStock: false-->
+<!--},-->
+<!--];-->
 
-}
-console.log(returnMostExpensiveProductObjectInStock());
+<!--function returnMostExpensiveProductObjectInStock(products){-->
+<!--    var mostExpensive = products.reduce((max, min) => max.price > min.price ? max : min);-->
+
+<!--}-->
+<!--console.log(returnMostExpensiveProductObjectInStock());-->
 <!--Create the following functions that take in an array of product objects and return various values:-->
 <!--returnMostExpensiveProductObjectInStock(products)-->
 <!--returnLeastExpensiveProductObjectInStock(products)-->
 <!--returnAveragePriceOfAllProductsInStock(products)-->
 <!--returnProductObjectsNotInStock(products)-->
+
+// 5/10 warm up
+
+let classes = [
+    {class: "6th grade history", students: 18},
+    {class: "7th grade history", students: 20},
+    {class: "8th grade history", students: 22}
+];
+
+function calculateTotalStudents(arrayOfObjects){
+var sum = 0;
+    for (var i = 0; i < classes.length; i++){
+        sum =+ classes[i].students;
+    }
+    return sum;
+}
+console.log(sum);
+
+// Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
+
 
 
 
