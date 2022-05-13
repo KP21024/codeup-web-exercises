@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom-practice</title>
+</head>
+<body id="backgroundColor">
+<div>
+    <label for="color">Enter Color!</label>
+    <label type="text" id="color">
+    <label type="button" id="changeColor" value="Submit Color">
+</div>
+<script>
+    var backgroundColor = document.getElementById("backgroundColor");
+    var colorEntered = document.getElementById("color");
+    var submitButton = document.getElementById("changeColor");
+    submitButton.addEventListener("click", function () {
+        backgroundColor.style.backgroundColor = colorEntered.value;
+    });
+
+
+</script>
+
+</body>
+</html>
