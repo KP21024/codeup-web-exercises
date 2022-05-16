@@ -22,8 +22,10 @@
     <li class="list-item">Item 5</li>
   </ul>
 
-    <div id="app"></div>
-  <p class="Latin">Lorem10 </p>
+    <div id="codeup">
+    <br>
+    </div>
+  <p class="Latin">Lorem 15 </p>
 
 
 </main>
@@ -31,6 +33,12 @@
 <script src="js/custom.js"></script>
 <script>
     // alert($("#pageLink").html());
+
+    $("h1").on("click",function (){
+
+        let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        $(this).css("background-color", "#" + randomColor);
+    });
 
  $("h1").on("click", function () {
      $("h1").css("background-color", "red")
