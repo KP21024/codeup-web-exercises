@@ -32,6 +32,22 @@
 <script>
     // alert($("#pageLink").html());
 
+ $("h1").on("click", function () {
+     $("h1").css("background-color", "red")
+ });
+
+ $("p").dblclick(function () {
+     $("p").css("font-size", "18px")
+ })
+    $("li").hover(function(){
+        $(this).css("color", "red")
+    },
+        function () {
+            $(this).css("color", "black")
+        })
+
+
+
 </script>
 </body>
 </html>
