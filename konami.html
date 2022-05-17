@@ -8,7 +8,7 @@
 
 
 <script src="/js/jquery-3.6.0.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
     "use strict";
     $(document).ready(function () {
@@ -28,26 +28,19 @@
          Be creative!
          Happy Playing.
          **/
+        "use strict";
+        $(document).ready(function () {
 
-        var konamiCode = [38,38,40,40,37,39,37,39,66,65,13]
-
-        prompt('please enter your code!')
-        // var input = []
-        function trackInput(e) {
-            var input = []
-            e.preventDefault();
-            console.log(e)
-            // var addID = coffees.length + 1;
-            var addInput = input.value.toString();
-            // var addRoast = newRoast.value.toString();
-            var typed =  $(document).keyup(function (event) {
-                console.log(event.keyCode);
-            })
-            input.push(typed);
-            console.log(input);
-            // tbody.innerHTML = renderCoffees(coffees);
         }
-        trackInput(e)
+        var konamiCode = "3838404037393739666513";
+        var userInput= "";
+            $(document).keyup(function (event) {
+                userInput += even.keyCode;
+
+                if(userInput === konamiCode) {
+                alert('You have added 30 lives!')
+            }
+            console.log(userInput)
 
     });
 </script>
