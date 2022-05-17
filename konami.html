@@ -10,14 +10,14 @@
 <script src="/js/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-    "use strict";
-    $(document).ready(function () {
+    // "use strict";
+    // $(document).ready(function () {
 
 
 
-        $(document).keyup(function (event) {
-            console.log(event.keyCode);
-        });
+        // $(document).keyup(function (event) {
+        //     console.log(event.keyCode);
+        // });
         /**
          Allow the user to enter the Konami Code: "↑ ↑ ↓ ↓ ← → ← → b a enter" (the return key)
          Find the matching sequence using the code above for each key in the Konami Code.
@@ -31,11 +31,11 @@
         "use strict";
         $(document).ready(function () {
 
-        }
+        });
         var konamiCode = "3838404037393739666513";
         var userInput= "";
             $(document).keyup(function (event) {
-                userInput += even.keyCode;
+                userInput += event.keyCode;
 
                 if(userInput === konamiCode) {
                 alert('You have added 30 lives!')
