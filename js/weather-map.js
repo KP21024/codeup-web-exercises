@@ -1,7 +1,7 @@
 $.get("http://api.openweathermap.org/data/2.5/onecall", {
     APPID: OPEN_WEATHER_APPID,
-    lat:   29.52391,
-    lon:   98.78466,
+    lat:   29.524095617335412,
+    lon:   -98.78472067973708,
     units: "imperial"
 }).done(function(data) {
     console.log('The entire response:', data);
