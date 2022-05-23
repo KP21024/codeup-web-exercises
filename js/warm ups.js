@@ -64,3 +64,4 @@ console.log(sum);
 // Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
 
 // Bonus: instead of the total students, return the highest number of students in any class
+
