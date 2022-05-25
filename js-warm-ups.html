@@ -7,107 +7,110 @@
 <body>
 
 <script>
-    function returnFirstAndLast(inputArr) {
-        var outputArr = [];
-        var firstElement = inputArr[0];
-        var lastElement = inputArr[inputArr.length -1];
-        outputArr.push(firstElement);
-        outputArr.push(lastElement);
-        return outputArr;
-    }
-    console.log(returnFirstAndLast([1, 2, 3, 4,]))
+    // function returnFirstAndLast(inputArr) {
+    //     var outputArr = [];
+    //     var firstElement = inputArr[0];
+    //     var lastElement = inputArr[inputArr.length -1];
+    //     outputArr.push(firstElement);
+    //     outputArr.push(lastElement);
+    //     return outputArr;
+    // }
+    // console.log(returnFirstAndLast([1, 2, 3, 4,]))
+    //
+    //
+    // // 4/22
+    // var trails = [
+    //     {
+    //         name: "Salado Creek Greenway",
+    //         distanceInMiles: 20,
+    //         isPaved: true
+    //     },
+    //     {
+    //         name: "Leon Creek Greenway",
+    //         distanceInMiles: 20.1,
+    //         isPaved: true
+    //     },
+    //     {
+    //         name: "McAllister Park: Blue Loop",
+    //         distanceInMiles: 6.3,
+    //         isPaved: false
+    //     },
+    //     {
+    //         name: "Phil Hardberger Park: Geology Trail",
+    //         distanceInMiles: 0.8,
+    //         isPaved: false
+    //     }
+    // ]
+    //
+    //
+    // function unpavedTotalDistance(arr){
+    //     var total = 0;
+    //     arr.forEach(function(trail) {
+    //         if (trail.isPaved === false) {
+    //             total += trail.distanceInMiles;
+    //         }
+    //     })
+    //     return total;
+    //
+    // }
+    // // console.log(unpavedTotalDistance(trails));
+    //
+    // function alpha(string) {
+    //     return string.split('').sort().join('');
+    //
+    //
+    //
+    // }
+    // console.log(alpha('KennyPittman'));
+    // console.log(alpha('codeup'));
+    // console.log(alpha('Texas'))
+    //
+    //
+    // function createNumObject(num1, num2) {
+    //   if (num1 === num2) {
+    //       return {
+    //           lowest: num1,
+    //           highest: num1
+    //       }
+    //   } else if (num1 > num2) {
+    //       return {
+    //           lowest: num2,
+    //           highest: num1
+    //       }
+    //   } else {
+    //       return {
+    //           lowest: num1,
+    //           highest: num2
+    //       }
+    //   }
+    // }
+    // console.log(createNumObject(4, 8));
+    // console.log(createNumObject(1, 6));
+    // console.log(createNumObject(7, 2));
+    // console.log(createNumObject(4, 6));
+    //
+    //
+    // // 5/9/22**********************************************************
+    //
+    // // Write a function that accepts an array of numbers and returns the average.
+    //
+    // function returnAverage (Array) {
+    //     var total = 0;
+    //     // for (var i = 0; i < array.length; i++) {
+    //     //     total += array[i];
+    //     // }
+    //     array.forEach(function(number) {
+    //         total += number;
+    //     }
+    //     return total / array.length;
+    // }
+    //     // Test inputs:
+    //    console.log(returnAverage([3, 5, 7, 10, 0]));
 
+    / TODO: Write an arrow function named "highFive" which accepts a string and alerts the user's input, asking for a high five.
+    // Example: highFive("Go") returns "Go, high five!"
 
-    // 4/22
-    var trails = [
-        {
-            name: "Salado Creek Greenway",
-            distanceInMiles: 20,
-            isPaved: true
-        },
-        {
-            name: "Leon Creek Greenway",
-            distanceInMiles: 20.1,
-            isPaved: true
-        },
-        {
-            name: "McAllister Park: Blue Loop",
-            distanceInMiles: 6.3,
-            isPaved: false
-        },
-        {
-            name: "Phil Hardberger Park: Geology Trail",
-            distanceInMiles: 0.8,
-            isPaved: false
-        }
-    ]
-
-
-    function unpavedTotalDistance(arr){
-        var total = 0;
-        arr.forEach(function(trail) {
-            if (trail.isPaved === false) {
-                total += trail.distanceInMiles;
-            }
-        })
-        return total;
-
-    }
-    // console.log(unpavedTotalDistance(trails));
-
-    function alpha(string) {
-        return string.split('').sort().join('');
-
-
-
-    }
-    console.log(alpha('KennyPittman'));
-    console.log(alpha('codeup'));
-    console.log(alpha('Texas'))
-
-
-    function createNumObject(num1, num2) {
-      if (num1 === num2) {
-          return {
-              lowest: num1,
-              highest: num1
-          }
-      } else if (num1 > num2) {
-          return {
-              lowest: num2,
-              highest: num1
-          }
-      } else {
-          return {
-              lowest: num1,
-              highest: num2
-          }
-      }
-    }
-    console.log(createNumObject(4, 8));
-    console.log(createNumObject(1, 6));
-    console.log(createNumObject(7, 2));
-    console.log(createNumObject(4, 6));
-
-
-    // 5/9/22**********************************************************
-
-    // Write a function that accepts an array of numbers and returns the average.
-
-    function returnAverage (Array) {
-        var total = 0;
-        // for (var i = 0; i < array.length; i++) {
-        //     total += array[i];
-        // }
-        array.forEach(function(number) {
-            total += number;
-        }
-        return total / array.length;
-    }
-        // Test inputs:
-       console.log(returnAverage([3, 5, 7, 10, 0]));
-
-
+    const highFive = (str) => alert($(str), highFive);
 </script>
 
 </body>
