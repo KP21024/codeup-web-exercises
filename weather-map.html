@@ -16,6 +16,20 @@
     <title>Weather Maps</title>
 </head>
 <body>
+<nav class="navbar bg-primary">
+    <div class="container-fluid">
+        <h4 class="App-title mb-1 text-white">Weather To You</h4>
+        <p id="location" class="current-city-display mb-1 text-white">Current city:</p>
+    </div>
+</nav>
+
+
+<!--Search for place-->
+<form class="mx-left w-50 m-2">
+    <label for="setMarker">Enter a location</label>
+    <input type="text" name="setMarker" id="setMarker" class="my-2">
+    <button id="setMarkerButton">Submit</button>
+</form>
 <div class="row">
     <div id="weatherCard"></div>
 </div>
