@@ -1,3 +1,7 @@
+import {OPEN_WEATHER_APPID} from "./keys.js";
+import {MAPBOX_API_TOKEN} from "./keys.js";
+$(function () {
+
 $.get("http://api.openweathermap.org/data/2.5/onecall", {
     APPID: OPEN_WEATHER_APPID,
     lat:    29.524095617335412,
@@ -53,4 +57,4 @@ $.get("http://api.openweathermap.org/data/2.5/onecall", {
 
     })
 
-});
+});}
